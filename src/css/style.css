@@ -80,15 +80,16 @@ hr {
     border-radius: 10px;
     margin: 20px;
     width: 330px;
-    height: 350px;
+
     
 }
 
 .card .top{
     background-image: url(../images/bg-pattern-card.svg);
     width: 100%;
-    height: 20%;
     border-radius: 10px;
+    position: relative;
+    
 }
 
 .container {
