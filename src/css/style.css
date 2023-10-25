@@ -1,40 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+.content__top--img {
+    background: url(../images/bg-pattern-top.svg) no-repeat;
+    width: 500px;
+    height: 500px;
+    background-size: 100%;
+    position: absolute;
+    left: -250px;
+    top: -200px;
+
+
 }
 
-ul {
-    list-style: none;
-}
-
-hr {
-    width: 100%;
-}
-
-:root {
-    --background-color: hsl(185, 75%, 39%);
-    --text-color: hsl(227, 10%, 46%);
-    --card-color: hsl(0, 0%, 59%);
-}
-
-
-body {
-    height: 100vh;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
-    overflow-x: hidden; 
-}
-
-body .fundo{
-    background-image: url('../images/bg-pattern-bottom.svg');
-      height: 100vh; 
-      width: 100%;
-      position: absolute;
-      top: 0;
-      transform: rotate(20deg);
-      left: 0;
-      z-index: -1;
+.content__bottom--img {
+    width: 260px;
+    height: 480px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../images/bg-pattern-bottom.svg) no-repeat;
+    z-index: -1;
 }
 
 
@@ -43,23 +27,7 @@ body .fundo{
     align-items: center;
     justify-content: center;
     height: 100%;
-   
-}
 
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
-body {
-    background-color: var(--background-color);
-    height: 100vh;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
-}
-
-hr {
-    width: 100%;
 }
 
 .container {
@@ -67,7 +35,7 @@ hr {
     align-items: center;
     justify-content: center;
     height: 100%;
-    
+
 }
 
 .card {
@@ -81,15 +49,15 @@ hr {
     margin: 20px;
     width: 330px;
 
-    
+
 }
 
-.card .top{
+.card .top {
     background-image: url(../images/bg-pattern-card.svg);
     width: 100%;
+    height: 150px;
     border-radius: 10px;
-    position: relative;
-    
+
 }
 
 .container {
@@ -106,12 +74,15 @@ hr {
     align-items: center;
     gap: 10px;
     height: 100%;
+    padding-top: 40px;
 }
 
 .card .profile-informations img {
     border-radius: 50%;
-    margin-top: 20px;
-    border: 2px solid black;
+    margin-top: 30px;
+    border: 6px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 300px;
 }
 
 .card .profile-numbers {
@@ -133,3 +104,4 @@ hr {
 .profile-numbers .info .counter-type {
     color: var(--text-color);
 }
+
